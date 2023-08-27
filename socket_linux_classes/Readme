@@ -1,1 +1,3 @@
 This task was completed as part of the entrance test. The program implemented the creation of multithreading, string processing and data transfer between applications using sockets.
+In the first implementation, the program sends data to another program and cleans the buffer regardless of its connection. The second implementation checks if there is a connection.
+If the second program is closed in an emergency, a reconnection error may occur, which can be corrected by adding a listening stream that detects a connection break. However, this was not done due to the limitation of the number of threads in a particular task.
